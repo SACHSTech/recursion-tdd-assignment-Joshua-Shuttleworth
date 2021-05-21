@@ -8,4 +8,7 @@ public class Recursion {
 			return count7(n/10);
 		return 0;
 	}
+	public static String changePi(String str){
+		return null;
+	}
 }

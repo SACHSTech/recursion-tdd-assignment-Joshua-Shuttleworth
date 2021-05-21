@@ -23,6 +23,11 @@ public class RecursionTest{
   public void Test3() {
     assertEquals(0, Recursion.count7(123));
   }
+
+  @Test
+  public void Test4() {
+    assertEquals("x3.14x", Recursion.changePi("xpix"));
+  }
     
   // add more tests
 }
