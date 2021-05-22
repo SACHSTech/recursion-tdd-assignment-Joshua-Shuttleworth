@@ -16,6 +16,10 @@ public class Recursion {
 		return "";
 	}
 	public static boolean array220(int[] intNums, int index) {
-		return true;
+		if(index == intNums.length-1)
+			return false;
+		if((intNums[index]*10) == intNums[index+1])
+			return true;
+		return array220(intNums, index+1);	
 	}
 }
