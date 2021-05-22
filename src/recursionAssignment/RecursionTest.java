@@ -61,6 +61,11 @@ public class RecursionTest{
     int[] arr = {1, 2, 24, 38, 5, 67};
     assertEquals(false, Recursion.array220(arr, 0));
   }
+  @Test
+  public void array220Test5(){
+    int[] arr = {8, 4, 63, 87, 9, 90};
+    assertEquals(true, Recursion.array220(arr, 0));
+  }
   // add more tests
 }
 
