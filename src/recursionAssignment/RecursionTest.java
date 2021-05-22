@@ -41,6 +41,11 @@ public class RecursionTest{
     assertEquals("iiipp3.143.143.14iip3.14ii", Recursion.changePi("iiipppipipiiippiii"));
   }
     
+  @Test
+  public void array220Test1(){
+    int[] arr = {1, 2, 20};
+    assertEquals(true, Recursion.array220(arr, 0));
+  }
   // add more tests
 }
 
