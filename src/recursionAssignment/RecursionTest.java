@@ -1,18 +1,13 @@
 package recursionAssignment;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-//import org.junit.jupiter.api.Before;
-//import org.junit.jupiter.api.After;
-
 import recursionAssignment.Recursion;
 
-public class RecursionTest{
-    
-    /**
-     * An initial test
-     */
+public class RecursionTest {
+
+  // Tests for count7
   @Test
-  public void count7Test1(){
+  public void count7Test1() {
     assertEquals(2, Recursion.count7(717));
   }
   @Test
@@ -24,6 +19,7 @@ public class RecursionTest{
     assertEquals(0, Recursion.count7(123));
   }
 
+  // Tests for changePi
   @Test
   public void changePiTest1() {
     assertEquals("x3.14x", Recursion.changePi("xpix"));
@@ -40,35 +36,36 @@ public class RecursionTest{
   public void changePiTest4() {
     assertEquals("iiipp3.143.143.14iip3.14ii", Recursion.changePi("iiipppipipiiippiii"));
   }
-    
+  
+  // Tests for array220
   @Test
-  public void array220Test1(){
+  public void array220Test1() {
     int[] arr = {1, 2, 20};
     assertEquals(true, Recursion.array220(arr, 0));
   }
   @Test
-  public void array220Test2(){
+  public void array220Test2() {
     int[] arr = {3, 30};
     assertEquals(true, Recursion.array220(arr, 0));
   }
   @Test
-  public void array220Test3(){
+  public void array220Test3() {
     int[] arr = {3};
     assertEquals(false, Recursion.array220(arr, 0));
   }
   @Test
-  public void array220Test4(){
+  public void array220Test4() {
     int[] arr = {1, 2, 24, 38, 5, 67};
     assertEquals(false, Recursion.array220(arr, 0));
   }
   @Test
-  public void array220Test5(){
+  public void array220Test5() {
     int[] arr = {8, 4, 63, 87, 9, 90};
     assertEquals(true, Recursion.array220(arr, 0));
   }
-  // add more tests
 }
 
+// Compile commands
 /*
 * javac -d bin src/recursionAssignment/Recursion.java
 * 
