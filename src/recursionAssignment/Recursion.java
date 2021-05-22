@@ -16,6 +16,6 @@ public class Recursion {
 		return "";
 	}
 	public static boolean array220(int[] intNums, int index) {
-		return false;
+		return true;
 	}
 }
