@@ -12,29 +12,33 @@ public class RecursionTest{
      * An initial test
      */
   @Test
-  public void Test1(){
+  public void count7Test1(){
     assertEquals(2, Recursion.count7(717));
   }
   @Test
-  public void Test2() {
+  public void count7Test2() {
     assertEquals(1, Recursion.count7(7));
   }
   @Test
-  public void Test3() {
+  public void count7Test3() {
     assertEquals(0, Recursion.count7(123));
   }
 
   @Test
-  public void Test4() {
+  public void changePiTest1() {
     assertEquals("x3.14x", Recursion.changePi("xpix"));
   }
   @Test
-  public void Test5() {
+  public void changePiTest2() {
     assertEquals("3.143.14", Recursion.changePi("pipi"));
   }
   @Test
-  public void Test6() {
+  public void changePiTest3() {
     assertEquals("3.14p", Recursion.changePi("pip"));
+  }
+  @Test
+  public void changePiTest4() {
+    assertEquals("iiipp3.143.143.14iip3.14ii", Recursion.changePi("iiipppipipiiippiii"));
   }
     
   // add more tests

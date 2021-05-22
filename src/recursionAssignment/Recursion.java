@@ -8,11 +8,14 @@ public class Recursion {
 			return count7(n/10);
 		return 0;
 	}
-	public static String changePi(String str){
+	public static String changePi(String str) {
 		if(str.length() > 1 && (str.substring(0, 2)).equals("pi"))
 			return "3.14"+changePi(str.substring(2));
 		if(str.length() != 0)
 			return str.substring(0, 1)+changePi(str.substring(1));
 		return "";
+	}
+	public static boolean array220(int[] intNums, int index) {
+		return true;
 	}
 }
